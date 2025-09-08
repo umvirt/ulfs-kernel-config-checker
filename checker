@@ -15,10 +15,20 @@ fi
 
 . config/config
 
+
 if [[ $BASH_ARGC<1 ]]
 then
 
 echo "ERROR: Check not defined."
+echo
+echo "Available checks:"
+echo
+
+for s in `cd checks && ls`; do
+
+echo $s
+
+done
 exit
 
 fi
