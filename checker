@@ -1,0 +1,69 @@
+#!/bin/bash
+
+#echo
+#echo "UmVirt Linux kernel config file checker"
+#echo "---------------------------------------"
+#echo
+
+if [ ! -f config/config ]
+then
+
+echo "ERROR: Linux kernel config file not found."
+exit
+
+fi
+
+. config/config
+
+if [[ $BASH_ARGC<1 ]]
+then
+
+echo "ERROR: Check not defined."
+exit
+
+fi
+
+CF=0
+
+if [ -f checks/$1 ]
+then
+
+. checks/$1
+
+CF=1
+
+fi
+
+if [[ $CF == 0 ]]
+then
+
+echo "ERROR: Check file not found."
+exit
+
+fi
+
+echo
+echo "CHECK: $CHECK_TITLE"
+echo
+
+for PARAM in ${!CHECKS[@]}
+do
+
+#echo $PARAM
+
+#//PARAM=key
+declare VAL="CONFIG_$PARAM"
+VALUE=${!VAL}
+
+if [[ $VALUE == "" ]]
+then
+
+VALUE="NULL"
+
+fi
+
+CMP=`./cmp $VALUE ${CHECKS[$PARAM]}`
+#echo -e "$VAL\t\t\t$VALUE\t${LFS[$PARAM]}"
+printf "%-10s%-40s%-20s%-20s\n" $CMP $VAL $VALUE ${CHECKS[$PARAM]}
+
+done

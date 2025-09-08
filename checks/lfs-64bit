@@ -1,0 +1,10 @@
+CHECK_TITLE="Linux From Scratch Systemd Edition 64-bit support (10.3)"
+
+declare -A CHECKS=(
+["X86_X2APIC"]="y"
+["PCI"]="y"
+["PCI_MSI"]="y"
+["IOMMU_SUPPORT"]="y"
+["IRQ_REMAP"]="y"
+)
+

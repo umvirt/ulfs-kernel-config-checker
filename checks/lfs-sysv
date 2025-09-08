@@ -1,0 +1,26 @@
+CHECK_TITLE="Linux From Scratch Systemd Edition SysV (10.3)"
+
+declare -A CHECKS=(
+["WERROR"]="NULL"
+["PSI"]="y"
+["PSI_DEFAULT_DISABLED"]="NULL"
+["IKHEADERS"]="NULL"
+["CGROUPS"]="y"
+["MEMCG"]="y"
+["EXPERT"]="NULL"
+["RELOCATABLE"]="y"
+["RANDOMIZE_BASE"]="y"
+["STACKPROTECTOR"]="y"
+["STACKPROTECTOR_STRONG"]="y"
+["UEVENT_HELPER"]="NULL"
+["DEVTMPFS"]="y"
+["DEVTMPFS_MOUNT"]="y"
+["SYSFB_SIMPLEFB"]="y"
+["DRM"]="y"
+["DRM_PANIC"]="y"
+["DRM_PANIC_SCREEN"]="kmsg"
+["DRM_FBDEV_EMULATION"]="y"
+["DRM_SIMPLEDRM"]="y"
+["FRAMEBUFFER_CONSOLE"]="y"
+)
+

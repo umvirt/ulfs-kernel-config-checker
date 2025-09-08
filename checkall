@@ -1,0 +1,7 @@
+for s in `cd checks && ls` ; do
+
+./checker $s
+
+done
+
+echo
