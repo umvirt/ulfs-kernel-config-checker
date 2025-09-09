@@ -72,8 +72,7 @@ VALUE="NULL"
 
 fi
 
-CMP=`./cmp $VALUE ${CHECKS[$PARAM]}`
-#echo -e "$VAL\t\t\t$VALUE\t${LFS[$PARAM]}"
-printf "%-10s%-40s%-20s%-20s\n" $CMP $VAL $VALUE ${CHECKS[$PARAM]}
+CMP=`./cmp "${VALUE}" "${CHECKS[$PARAM]}"`
+printf "%-10s%-40s%-20s%-40s\n" $CMP $VAL "$VALUE" "${CHECKS[$PARAM]}"
 
 done
