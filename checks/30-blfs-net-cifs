@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch SMB/CIFS support"
+
+declare -A CHECKS=(
+["NETWORK_FILESYSTEMS"]="y"
+["CIFS"]="m/y"
+)
+

@@ -1,0 +1,11 @@
+CHECK_TITLE="Beyond Linux From Scratch Xorg-Server support"
+
+declare -A CHECKS=(
+["DRM"]="m/y"
+["DRM_VMWGFX"]="m/y"
+["DRM_BOCHS"]="m/y"
+["DRM_VBOXVIDEO"]="m/y"
+["SYSFB_SIMPLEFB"]="y"
+["DRM_SIMPLEDRM"]="m/y"
+)
+

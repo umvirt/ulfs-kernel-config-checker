@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch UPower support"
+
+declare -A CHECKS=(
+["NAMESPACES"]="y"
+["USER_NS"]="y"
+)
+

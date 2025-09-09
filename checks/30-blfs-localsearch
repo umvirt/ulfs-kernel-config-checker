@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch localsearch support"
+
+declare -A CHECKS=(
+["SECURITY"]="y"
+["SECURITY_LANDLOCK"]="m/y"
+)
+

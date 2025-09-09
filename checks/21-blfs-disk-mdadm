@@ -1,0 +1,12 @@
+CHECK_TITLE="Beyond Linux From Scratch mdadm support"
+
+declare -A CHECKS=(
+["MD"]="y"
+["BLK_DEV_MD"]="m/y"
+["MD_AUTODETECT"]="y"
+["MD_RAID0"]="m/y"
+["MD_RAID1"]="m/y"
+["MD_RAID10"]="m/y"
+["MD_RAID456"]="m/y"
+)
+

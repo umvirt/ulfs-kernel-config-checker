@@ -1,0 +1,8 @@
+CHECK_TITLE="Beyond Linux From Scratch Control Group support"
+
+declare -A CHECKS=(
+["CGROUPS"]="y"
+["MEMCG"]="y"
+["CPUSETS"]="y"
+)
+

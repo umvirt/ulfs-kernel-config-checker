@@ -1,0 +1,9 @@
+CHECK_TITLE="Beyond Linux From Scratch intel-media-driver support"
+
+declare -A CHECKS=(
+["DRM"]="m/y"
+["DRM_I915"]="m/y"
+["DRM_XE"]="m/y"
+["DRM_XE_FORCE_PROBE"]="y"
+)
+

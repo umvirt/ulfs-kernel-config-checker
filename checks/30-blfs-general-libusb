@@ -1,0 +1,11 @@
+CHECK_TITLE="Beyond Linux From Scratch libusb support"
+
+declare -A CHECKS=(
+["USB_SUPPORT"]="y"
+["USB"]="m/y"
+["USB_PCI"]="y"
+["USB_XHCI_HCD"]="m/y"
+["USB_EHCI_HCD"]="m/y"
+["USB_OHCI_HCD"]="m/y"
+)
+

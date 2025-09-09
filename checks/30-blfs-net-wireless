@@ -1,0 +1,11 @@
+CHECK_TITLE="Beyond Linux From Scratch Wireless support"
+
+declare -A CHECKS=(
+["NET"]="y"
+["WIRELESS"]="y"
+["CFG80211"]="m/y"
+["MAC80211"]="m/y"
+["NETDEVICES"]="y"
+["WLAN"]="y"
+)
+

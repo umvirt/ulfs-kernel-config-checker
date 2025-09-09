@@ -1,0 +1,8 @@
+CHECK_TITLE="Beyond Linux From Scratch QtWebEngine support (optional)"
+
+declare -A CHECKS=(
+["NAMESPACES"]="y"
+["USER_NS"]="m/y"
+["PID_NS"]="m/y"
+)
+

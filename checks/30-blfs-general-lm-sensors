@@ -1,0 +1,15 @@
+CHECK_TITLE="Beyond Linux From Scratch lm-sensors support"
+
+declare -A CHECKS=(
+["ACPI"]="y"
+["ACPI_BATTERY"]="m/y"
+["ACPI_THERMAL"]="m/y"
+["BLK_DEV_NVME"]="y"
+["NVME_HWMON"]="y"
+["HWMON"]="m/y"
+["SENSORS_K8TEMP"]="m/y"
+["SENSORS_K10TEMP"]="m/y"
+["SENSORS_FAM15H_POWER"]="m/y"
+["SENSORS_CORETEMP"]="m/y"
+)
+

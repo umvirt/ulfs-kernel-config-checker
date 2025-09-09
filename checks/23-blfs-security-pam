@@ -1,0 +1,6 @@
+CHECK_TITLE="Beyond Linux From Scratch PAM support"
+
+declare -A CHECKS=(
+["AUDIT"]="y"
+)
+

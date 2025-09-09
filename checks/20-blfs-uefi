@@ -1,0 +1,15 @@
+CHECK_TITLE="Beyond Linux From Scratch UEFI support"
+
+declare -A CHECKS=(
+["EFI"]="y"
+["EFI_STUB"]="y"
+["BLOCK"]="y"
+["PARTITION_ADVANCED"]="y"
+["EFI_PARTITION"]="y"
+["VFAT_FS"]="m/y"
+["EFIVAR_FS"]="m/y"
+["NLS"]="y"
+["NLS_CODEPAGE_437"]="m/y"
+["NLS_ISO8859_1"]="m/y"
+)
+

@@ -1,0 +1,6 @@
+CHECK_TITLE="Beyond Linux From Scratch XFS support (optional)"
+
+declare -A CHECKS=(
+["XFS_FS"]="m/y"
+)
+

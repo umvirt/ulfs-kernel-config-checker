@@ -1,0 +1,17 @@
+CHECK_TITLE="Beyond Linux From Scratch keyutils support"
+
+declare -A CHECKS=(
+["KEYS"]="y"
+["BIG_KEYS"]="y"
+["KEY_DH_OPERATIONS"]="y"
+["CRYPTO"]="y"
+["CRYPTO_RSA"]="m/y"
+["CRYPTO_SHA1"]="m/y"
+["ASYMMETRIC_KEY_TYPE"]="y"
+["ASYMMETRIC_PUBLIC_KEY_SUBTYPE"]="y"
+["X509_CERTIFICATE_PARSER"]="y"
+["SYSTEM_TRUSTED_KEYRING"]="y"
+["SECONDARY_TRUSTED_KEYRING"]="y"
+["SYSTEM_BLACKLIST_KEYRING"]="y"
+)
+

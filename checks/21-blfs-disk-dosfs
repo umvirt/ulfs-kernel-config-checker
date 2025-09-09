@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch DOSFS support"
+
+declare -A CHECKS=(
+["MSDOS_FS"]="m/y"
+["VFAT_FS"]="m/y"
+)
+

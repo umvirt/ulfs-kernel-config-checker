@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch GPM support"
+
+declare -A CHECKS=(
+["INPUT"]="y"
+["INPUT_MOUSEDEV"]="m/y"
+)
+

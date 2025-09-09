@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch NTFS support"
+
+declare -A CHECKS=(
+["NTFS3_FS"]="m/y"
+["NTFS_FS"]="m/y"
+)
+

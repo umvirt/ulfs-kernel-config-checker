@@ -1,0 +1,14 @@
+CHECK_TITLE="Beyond Linux From Scratch encrypted block devices support"
+
+declare -A CHECKS=(
+["MD"]="y"
+["BLK_DEV_DM"]="m/y"
+["DM_CRYPT"]="m/y"
+["CRYPTO"]="y"
+["CRYPTO_AES"]="m/y"
+["CRYPTO_TWOFISH"]="m/y"
+["CRYPTO_XTS"]="m/y"
+["CRYPTO_SHA256"]="m/y"
+["CRYPTO_USER_API_SKCIPHER"]="m/y"
+)
+

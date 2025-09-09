@@ -1,0 +1,6 @@
+CHECK_TITLE="Beyond Linux From Scratch JFS support (optional)"
+
+declare -A CHECKS=(
+["JFS_FS"]="m/y"
+)
+
