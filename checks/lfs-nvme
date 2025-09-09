@@ -1,6 +1,0 @@
-CHECK_TITLE="Linux From Scratch Systemd Edition NVME SSD support (10.3)"
-
-declare -A CHECKS=(
-["BLK_DEV_NVME"]="y"
-)
-

@@ -1,4 +1,4 @@
-CHECK_TITLE="Linux From Scratch Systemd Edition SysV (10.3)"
+CHECK_TITLE="Linux From Scratch SysV Edition (chapter 10.3)"
 
 declare -A CHECKS=(
 ["WERROR"]="NULL"
