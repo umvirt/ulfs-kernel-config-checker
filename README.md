@@ -47,7 +47,7 @@ Kernel config file can be found:
 
 ### Sample output
 
-        CHECK: Linux From Scratch Systemd Edition 64-bit support (10.3)
+        CHECK: Linux From Scratch Systemd Edition 64-bit support (chapter 10.3)
 
         OK        CONFIG_PCI                              y                   y
         OK        CONFIG_IOMMU_SUPPORT                    y                   y
@@ -55,7 +55,7 @@ Kernel config file can be found:
         OK        CONFIG_PCI_MSI                          y                   y
         FAIL      CONFIG_X86_X2APIC                       NULL                y
 
-### Meaning
+### Description
 
 First row is check title.
 Other rows are table rows. 
@@ -74,6 +74,38 @@ Possible values:
 
 - "y" means that option compiled in kernel
 - "m" means that option compiled as module
+- "m/y" means that "m" and "y" values are allowed
 - "NULL" means that option in undefined, don't have a value
 - "text" means some text string as option value
 
+## Checks
+
+### Objective
+
+Checks are collected and edited for kernel in ULFS Sample disk images (LIVE CD/DVD/USB DEMO versions).
+
+Almost all kernel options are selected because any ULFS sample disk image kernel can be used on various machines on AMD and Intel platforms simultaneously.
+
+Options with all possible values are ignored.
+
+Anybody can fork this software and edit checks for own needs according to license for free.
+
+### Sources
+
+#### Linux from Scratch
+
+In Linux from Scratch book (LFS) kernel options are shown in chapter 10.3:
+
+- Init system specific options:
+ - SysV
+ - Systemd
+- 64-bit architecture specific options
+- NVME SSD support
+
+#### Beyond Linux from Scratch
+
+In Beyond Linux from Scratch (BLFS) book kernel options are shown in various chapters.
+
+To find chapters in BLFS source git version can be used.
+Kernel options shown on "*kernel.xml" files. 
+According to xml files proper html files names can be inspected.
