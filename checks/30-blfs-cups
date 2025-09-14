@@ -5,6 +5,6 @@ declare -A CHECKS=(
 ["USB_PRINTER"]="m/y"
 ["PARPORT"]="m/y"
 ["PARPORT_PC"]="m/y"
-["PRINTER"]="y"
+["PRINTER"]="m/y"
 )
 
