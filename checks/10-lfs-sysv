@@ -7,7 +7,8 @@ declare -A CHECKS=(
 ["IKHEADERS"]="NULL"
 ["CGROUPS"]="y"
 ["MEMCG"]="y"
-["EXPERT"]="NULL"
+#Conflict with 30-blfs-general-bluez
+#["EXPERT"]="NULL"
 ["RELOCATABLE"]="y"
 ["RANDOMIZE_BASE"]="y"
 ["STACKPROTECTOR"]="y"
