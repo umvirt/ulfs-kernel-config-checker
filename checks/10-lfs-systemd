@@ -20,7 +20,8 @@ declare -A CHECKS=(
 ["UEVENT_HELPER"]="NULL"
 ["DEVTMPFS"]="y"
 ["DEVTMPFS_MOUNT"]="y"
-["FW_LOADER_USER_HELPER"]="NULL"
+#Unable to change value in menuconfig
+#["FW_LOADER_USER_HELPER"]="NULL"
 ["DMIID"]="y"
 ["SYSFB_SIMPLEFB"]="y"
 ["DRM"]="y"
