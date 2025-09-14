@@ -1,7 +1,7 @@
 CHECK_TITLE="Beyond Linux From Scratch Xorg video drivers"
 
 declare -A CHECKS=(
-["DRM"]="y/m"
+["DRM"]="m/y"
 ["DRM_RADEON"]="m/y"
 ["DRM_AMDGPU"]="m/y"
 ["DRM_AMDGPU_SI"]="y"
@@ -12,7 +12,7 @@ declare -A CHECKS=(
 ["DRM_I915"]="m/y"
 ["DRM_XE"]="m/y"
 ["DRM_XE_DISPLAY"]="y"
-["DRM_XE_FORCE_PROBE"]="y"
+["DRM_XE_FORCE_PROBE"]="*"
 ["DRM_VGEM"]="m/y"
 ["DRM_VMWGFX"]="m/y"
 )
