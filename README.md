@@ -4,6 +4,8 @@ ULFS version: 0.2.4
 
 LFS version: 12.4
 
+Linux kernel version: 6.16.1
+
 License: GPL
 
 ## About
@@ -25,14 +27,22 @@ Run "make" command to build "cmp" binary and "config" folder.
 
 ## Usage
 
-Put "config" file to "config" directory.
-Run all checks with command:
+Put "config" file to "config" directory. 
+
+Also it's possible to use symlink "config" which link to .config file in kernel sources directory.
+Symlink usage is allows to perform kernel config file edit and validation simultaneously.
+
+First of all get checks sets.
 
         ./checkall
 
-To run specific check use command:
+Run all checks from specific set with command:
 
-        ./check %check_name%
+        ./checkall %check_set%
+
+To run specific check from specific set use command:
+
+        ./check %check_set% %check_name%
 
 To get checks names use command:
 
@@ -40,7 +50,7 @@ To get checks names use command:
 
 Kernel config file can be found:
 
--  on "/boot" directory as file called "config*"
+-  on system "/boot" directory as file called "config*"
 -  on Linux sources direcory (/usr/src/linux*) as file called ".config"
 
 ## Output
@@ -109,3 +119,39 @@ In Beyond Linux from Scratch (BLFS) book kernel options are shown in various cha
 To find chapters in BLFS source git version can be used.
 Kernel options shown on "*kernel.xml" files. 
 According to xml files proper html files names can be inspected.
+
+## Tips & trics
+
+### Kernel build speed up
+
+Kernel building is heavy CPU time consuming task.
+It's possible to speed up it by using more CPU threads.
+
+### Remote kernel build
+
+When additional CPU threads are not available it's possible to build kernel on remote more powerful computer. 
+All is needed is provide config file.
+
+### Reduced kernel
+
+By-default, Linux kernel distibution is contain source code for building binaries and source code for configuration utilities. 
+
+Binaries building source code is redundatnt when only configuration is needed.
+Removing this code is allows to reduce disk usage almost in ten times!
+
+### Configuration editors
+
+There are many kernel editors:
+
+-  config          - Update current config utilising a line-oriented program
+-  nconfig         - Update current config utilising a ncurses menu based program
+-  menuconfig      - Update current config utilising a menu based program
+-  xconfig         - Update current config utilising a Qt based front-end
+-  gconfig         - Update current config utilising a GTK+ based front-end
+
+To run editor run
+
+        make %editor%
+
+More info: [https://www.kernel.org/doc/html/latest/kbuild/kconfig.html](https://www.kernel.org/doc/html/latest/kbuild/kconfig.html)
+
