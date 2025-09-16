@@ -120,7 +120,7 @@ To find chapters in BLFS source git version can be used.
 Kernel options shown on "*kernel.xml" files. 
 According to xml files proper html files names can be inspected.
 
-## Tips & trics
+## Tips & tricks
 
 ### Kernel build speed up
 
@@ -136,8 +136,13 @@ All is needed is provide config file.
 
 By-default, Linux kernel distibution is contain source code for building binaries and source code for configuration utilities. 
 
-Binaries building source code is redundatnt when only configuration is needed.
+Binaries building source code is redundant when only configuration tools are needed.
 Removing this code is allows to reduce disk usage almost in ten times!
+
+To create reduced kernel source directory you can run onlyconfig script:
+
+        ./onlyconfig <linux-souce-directory> <new-linux-source-directory>
+
 
 ### Configuration editors
 
@@ -149,7 +154,7 @@ There are many kernel editors:
 -  xconfig         - Update current config utilising a Qt based front-end
 -  gconfig         - Update current config utilising a GTK+ based front-end
 
-To run editor run
+To run editor in kernel sources directory run:
 
         make %editor%
 

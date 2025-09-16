@@ -1,0 +1,26 @@
+if [[ $1 == "" ]] | [[ $2 == "" ]]
+then
+
+echo "Usage: $0 <linux-souce-directory> <new-linux-source-directory>"
+
+exit
+
+fi
+
+if [ ! -d $1 ]
+
+then
+
+echo "ERROR: linux-souce-directory not exist"
+
+exit
+
+fi
+
+mkdir $2
+
+rsync -razv --include "*/" --include "Kconfig" --include "Kconfig.*" --exclude "*" $1/* $2
+
+cp $1/* $2
+cp -r $1/{scripts,arch,kernel} $2
+
