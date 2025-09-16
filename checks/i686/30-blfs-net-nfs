@@ -1,0 +1,8 @@
+CHECK_TITLE="Beyond Linux From Scratch NFS support"
+
+declare -A CHECKS=(
+["NETWORK_FILESYSTEMS"]="y"
+["NFS_FS"]="m/y"
+["NFSD"]="m/y"
+)
+

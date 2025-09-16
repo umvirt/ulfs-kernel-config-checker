@@ -1,0 +1,9 @@
+CHECK_TITLE="Beyond Linux From Scratch autofs support"
+
+declare -A CHECKS=(
+["AUTOFS_FS"]="m/y"
+["NETWORK_FILESYSTEMS"]="y"
+["NFS_FS"]="m/y"
+["CIFS"]="m/y"
+)
+

@@ -1,6 +1,24 @@
-for s in `cd checks && ls` ; do
+if [[ $1 == "" ]]
+then
 
-./checker $s
+echo "Error: Checks set is not defined!"
+echo
+echo "Available checks sets:"
+echo
+
+for s in `cd checks && ls`; do
+
+echo $s
+
+done
+
+exit
+
+fi
+
+for s in `cd checks/$1 && ls` ; do
+
+./checker $1 $s
 
 done
 

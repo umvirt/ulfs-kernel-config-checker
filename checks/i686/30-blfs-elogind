@@ -1,0 +1,11 @@
+CHECK_TITLE="Beyond Linux From Scratch elogind support (only SysV edition)"
+
+declare -A CHECKS=(
+["INOTIFY_USER"]="y"
+["TMPFS"]="y"
+["TMPFS_POSIX_ACL"]="y"
+["CRYPTO"]="y"
+["CRYPTO_USER"]="m/y"
+["CRYPTO_USER_API_HASH"]="m/y"
+)
+

@@ -1,0 +1,17 @@
+CHECK_TITLE="Beyond Linux From Scratch Xorg input drivers"
+
+declare -A CHECKS=(
+["INPUT"]="y"
+["INPUT_EVDEV"]="m/y"
+["INPUT_MISC"]="y"
+["INPUT_UINPUT"]="m/y"
+["SYSFB_SIMPLEFB"]="y"
+["DRM_SIMPLEDRM"]="m/y"
+["HID_SUPPORT"]="y"
+["HID"]="m/y"
+["HID_WACOM"]="m/y"
+["USB_HID"]="m/y"
+["USB_SUPPORT"]="y"
+["USB"]="m/y"
+)
+

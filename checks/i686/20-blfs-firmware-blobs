@@ -1,0 +1,8 @@
+CHECK_TITLE="Beyond Linux From Scratch Firmware Blobs support (optional)"
+
+declare -A CHECKS=(
+["FW_LOADER"]="y"
+["EXTRA_FIRMWARE"]="xx/aa.bin xx/bb.bin"
+["EXTRA_FIRMWARE_DIR"]="/lib/firmware"
+)
+

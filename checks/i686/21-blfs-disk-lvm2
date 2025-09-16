@@ -1,0 +1,19 @@
+CHECK_TITLE="Beyond Linux From Scratch LVM2 support"
+
+declare -A CHECKS=(
+["BLK_DEV"]="y"
+["BLK_DEV_RAM"]="m/y"
+["MD"]="y"
+["BLK_DEV_DM"]="m/y"
+["DM_CRYPT"]="m/y"
+["DM_SNAPSHOT"]="m/y"
+["DM_THIN_PROVISIONING"]="m/y"
+["DM_CACHE"]="m/y"
+["DM_MIRROR"]="m/y"
+["DM_ZERO"]="m/y"
+["DM_DELAY"]="m/y"
+["MAGIC_SYSRQ"]="y"
+
+
+)
+

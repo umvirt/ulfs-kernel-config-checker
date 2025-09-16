@@ -1,0 +1,11 @@
+CHECK_TITLE="Beyond Linux From Scratch Power-profiles-daemon support"
+
+declare -A CHECKS=(
+["CPU_FREQ"]="y"
+["CPU_FREQ_GOV_PERFORMANCE"]="y"
+["CPU_FREQ_GOV_POWERSAVE"]="m/y"
+["X86_INTEL_PSTATE"]="y"
+["X86_AMD_PSTATE"]="y"
+["X86_PLATFORM_DEVICES"]="y"
+)
+

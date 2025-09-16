@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch pm-utils support"
+
+declare -A CHECKS=(
+["SUSPEND"]="y"
+["HIBERNATION"]="y"
+)
+

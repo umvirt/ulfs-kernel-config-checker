@@ -15,8 +15,27 @@ fi
 
 . config/config
 
+if [[ $1 == "" ]]
+then
 
-if [[ $BASH_ARGC<1 ]]
+echo "Error: Checks set is not defined!"
+echo
+echo "Available checks sets:"
+echo
+
+for s in `cd checks && ls`; do
+
+echo $s
+
+done
+
+exit
+
+fi
+
+
+
+if [[ $2 == "" ]]
 then
 
 echo "ERROR: Check not defined."
@@ -24,7 +43,7 @@ echo
 echo "Available checks:"
 echo
 
-for s in `cd checks && ls`; do
+for s in `cd checks/$1 && ls`; do
 
 echo $s
 
@@ -35,10 +54,10 @@ fi
 
 CF=0
 
-if [ -f checks/$1 ]
+if [ -f checks/$1/$2 ]
 then
 
-. checks/$1
+. checks/$1/$2
 
 CF=1
 

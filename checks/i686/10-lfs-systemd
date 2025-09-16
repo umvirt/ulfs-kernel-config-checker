@@ -1,0 +1,37 @@
+CHECK_TITLE="Linux From Scratch Systemd Edition (chapter 10.3)"
+ 
+declare -A CHECKS=(
+["WERROR"]="NULL"
+["PSI"]="y"
+["PSI_DEFAULT_DISABLED"]="NULL"
+["IKHEADERS"]="NULL"
+["CGROUPS"]="y"
+["MEMCG"]="y"
+["RT_GROUP_SCHED"]="NULL"
+#Conflict with 30-blfs-general-bluez
+#["EXPERT"]="NULL"
+["RELOCATABLE"]="y"
+["RANDOMIZE_BASE"]="y"
+["STACKPROTECTOR"]="y"
+["STACKPROTECTOR_STRONG"]="y"
+["NET"]="y"
+["INET"]="y"
+["IPV6"]="y"
+["UEVENT_HELPER"]="NULL"
+["DEVTMPFS"]="y"
+["DEVTMPFS_MOUNT"]="y"
+#Unable to change value in menuconfig
+#["FW_LOADER_USER_HELPER"]="NULL"
+["DMIID"]="y"
+["SYSFB_SIMPLEFB"]="y"
+["DRM"]="y"
+["DRM_PANIC"]="y"
+["DRM_PANIC_SCREEN"]="kmsg"
+["DRM_FBDEV_EMULATION"]="y"
+["DRM_SIMPLEDRM"]="y"
+["FRAMEBUFFER_CONSOLE"]="y"
+["INOTIFY_USER"]="y"
+["TMPFS"]="y"
+["TMPFS_POSIX_ACL"]="y"
+)
+

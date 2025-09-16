@@ -1,0 +1,9 @@
+CHECK_TITLE="Beyond Linux From Scratch KEA DHCP Server support"
+
+declare -A CHECKS=(
+["NET"]="y"
+["PACKET"]="m/y"
+["INET"]="y"
+["IPV6"]="y"
+)
+

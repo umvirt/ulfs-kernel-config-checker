@@ -1,0 +1,11 @@
+CHECK_TITLE="Beyond Linux From Scratch BTRFS support (optional)"
+
+declare -A CHECKS=(
+["BTRFS_FS"]="m/y"
+["BTRFS_FS_POSIX_ACL"]="y"
+["BTRFS_FS_RUN_SANITY_TESTS"]="NULL"
+["BTRFS_DEBUG"]="NULL"
+["BTRFS_ASSERT"]="NULL"
+["BTRFS_FS_REF_VERIFY"]="NULL"
+)
+

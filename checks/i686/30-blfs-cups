@@ -1,0 +1,10 @@
+CHECK_TITLE="Beyond Linux From Scratch CUPS support"
+
+declare -A CHECKS=(
+["USB_SUPPORT"]="y"
+["USB_PRINTER"]="m/y"
+["PARPORT"]="m/y"
+["PARPORT_PC"]="m/y"
+["PRINTER"]="m/y"
+)
+

@@ -1,0 +1,6 @@
+CHECK_TITLE="Linux From Scratch NVME SSD support (chapter 10.3)"
+
+declare -A CHECKS=(
+["BLK_DEV_NVME"]="m/y"
+)
+

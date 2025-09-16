@@ -1,0 +1,6 @@
+CHECK_TITLE="Beyond Linux From Scratch lsof support"
+
+declare -A CHECKS=(
+["POSIX_MQUEUE"]="y"
+)
+

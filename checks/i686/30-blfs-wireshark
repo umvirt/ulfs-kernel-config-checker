@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch Wireshark support"
+
+declare -A CHECKS=(
+["NET"]="y"
+["PACKET"]="m/y"
+)
+

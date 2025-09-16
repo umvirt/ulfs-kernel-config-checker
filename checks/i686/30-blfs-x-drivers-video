@@ -1,0 +1,20 @@
+CHECK_TITLE="Beyond Linux From Scratch Xorg video drivers"
+
+declare -A CHECKS=(
+["DRM"]="m/y"
+["DRM_RADEON"]="m/y"
+["DRM_AMDGPU"]="m/y"
+["DRM_AMDGPU_SI"]="y"
+["DRM_AMDGPU_CIK"]="y"
+["DRM_AMD_DC"]="y"
+#BUG: NOUVEAU can't build for i686
+#["DRM_NOUVEAU"]="m/y"
+#["DRM_NOUVEAU_GSP_DEFAULT"]="y"
+["DRM_I915"]="m/y"
+["DRM_XE"]="m/y"
+["DRM_XE_DISPLAY"]="y"
+["DRM_XE_FORCE_PROBE"]="*"
+["DRM_VGEM"]="m/y"
+["DRM_VMWGFX"]="m/y"
+)
+

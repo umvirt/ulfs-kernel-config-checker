@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch ALSA support"
+
+declare -A CHECKS=(
+["SOUND"]="y"
+["SND"]="m/y"
+)
+

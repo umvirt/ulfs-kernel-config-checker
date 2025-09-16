@@ -1,0 +1,14 @@
+CHECK_TITLE="Beyond Linux From Scratch QEMU support"
+
+declare -A CHECKS=(
+["VIRTUALIZATION"]="y"
+["KVM"]="m/y"
+["KVM_INTEL"]="m/y"
+["KVM_AMD"]="m/y"
+["NET"]="y"
+["BRIDGE"]="m/y"
+["NETDEVICES"]="y"
+["NET_CORE"]="y"
+["TUN"]="m/y"
+)
+

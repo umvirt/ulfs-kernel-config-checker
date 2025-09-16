@@ -1,0 +1,7 @@
+CHECK_TITLE="Beyond Linux From Scratch FUSE support"
+
+declare -A CHECKS=(
+["FUSE_FS"]="m/y"
+["CUSE"]="m/y"
+)
+
