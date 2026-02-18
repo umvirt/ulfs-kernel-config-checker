@@ -25,12 +25,19 @@ This utility is can be used to check kernel configuration.
 
 Run "make" command to build "cmp" binary and "config" folder.
 
-## Usage
+## Preparation
 
 Put "config" file to "config" directory. 
 
 Also it's possible to use symlink "config" which link to .config file in kernel sources directory.
+
 Symlink usage is allows to perform kernel config file edit and validation simultaneously.
+
+To create link to current kernel config file run:
+
+        ln -s /usr/src/linux-$(uname -r)/.config config/config
+
+## Usage
 
 First of all get checks sets.
 
@@ -47,11 +54,6 @@ To run specific check from specific set use command:
 To get checks names use command:
 
        ./check
-
-Kernel config file can be found:
-
--  on system "/boot" directory as file called "config*"
--  on Linux sources direcory (/usr/src/linux*) as file called ".config"
 
 ## Output
 
@@ -160,3 +162,26 @@ To run editor in kernel sources directory run:
 
 More info: [https://www.kernel.org/doc/html/latest/kbuild/kconfig.html](https://www.kernel.org/doc/html/latest/kbuild/kconfig.html)
 
+### Configuration script
+
+It's possible to edit kernel configration in command line using "scripts/config" script:
+
+- Enable option
+
+        scripts/config --enable %option%
+
+- Disable option
+
+        scripts/config --disable %option%
+
+- Module option
+
+        scripts/config --module %option%
+
+- Set string value
+
+        scripts/config --set-str %option% "%value%"
+
+To get more info run:
+
+        scripts/config --help
