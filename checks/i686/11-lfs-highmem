@@ -1,0 +1,6 @@
+CHECK_TITLE="Linux From Scratch High Memory support (chapter 10.3)"
+
+declare -A CHECKS=(
+["HIGHMEM4G"]="y"
+)
+
