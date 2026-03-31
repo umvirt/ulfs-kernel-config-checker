@@ -9,7 +9,6 @@ declare -A CHECKS=(
 ["DRM_AMD_DC"]="y"
 #BUG: NOUVEAU can't build for i686
 #["DRM_NOUVEAU"]="m/y"
-#["DRM_NOUVEAU_GSP_DEFAULT"]="y"
 ["DRM_I915"]="m/y"
 ["DRM_XE"]="m/y"
 ["DRM_XE_DISPLAY"]="y"

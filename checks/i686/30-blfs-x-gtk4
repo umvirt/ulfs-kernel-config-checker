@@ -1,0 +1,6 @@
+CHECK_TITLE="Beyond Linux From Scratch GTK4 support (optional)"
+
+declare -A CHECKS=(
+["UDMABUF"]="y"
+)
+

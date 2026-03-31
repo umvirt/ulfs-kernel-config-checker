@@ -185,3 +185,11 @@ It's possible to edit kernel configration in command line using "scripts/config"
 To get more info run:
 
         scripts/config --help
+
+### Update
+
+To update ckecks a directory comparsion tool like Kompare can be used.
+
+Just select new release as destination and previous release as source.
+
+In BLFS git-repository kernel configuration is stored in kernel-config directory.

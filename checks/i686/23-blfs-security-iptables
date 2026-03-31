@@ -6,7 +6,9 @@ declare -A CHECKS=(
 ["NETFILTER_ADVANCED"]="y"
 ["NF_CONNTRACK"]="m/y"
 ["NETFILTER_XTABLES"]="m/y"
+["NETFILTER_XTABLES_LEGACY"]="y"
 ["NETFILTER_XT_TARGET_LOG"]="m/y"
 ["IP_NF_IPTABLES"]="m/y"
+["IP_NF_NAT"]="m/y"
 )
 
