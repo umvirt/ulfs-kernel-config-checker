@@ -1,0 +1,9 @@
+file=checks/$1/$2
+
+title=`cat $file | head -n 1 | sed -e 's/CHECK_TITLE\=\"//' | sed -e 's/\"//'`
+
+echo "{\"check\":" "\"$2\"" ","
+echo "\"title\":" "\"$title\"" ","
+echo "\"values\": {"
+cat $file | sed -n '/CHECKS=(/,/)$/p'| grep -v 'CHECKS=(' | grep -v ')' | grep -v '#' | grep -v '^$'| sed -e 's/$/\,/' | sed -e 's/\[//' | sed -e 's/\]//' | sed 's/"="/":"/'
+echo '}}'

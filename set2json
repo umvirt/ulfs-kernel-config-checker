@@ -1,0 +1,24 @@
+if [[ $1 == "" ]]
+then
+
+echo "Error: Checks set is not defined!"
+echo
+echo "Available checks sets:"
+echo
+
+for s in `cd checks && ls`; do
+
+echo $s
+
+done
+
+echo
+
+exit
+
+fi
+
+
+./jsonall "$@" | tr -d '\n' | sed -e 's/,\}/\}/g' | sed -e 's/,\]/\]/g'
+echo
+
