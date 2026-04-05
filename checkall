@@ -1,24 +1,24 @@
 if [[ $1 == "" ]]
 then
 
-echo "Error: Checks set is not defined!"
-echo
-echo "Available checks sets:"
-echo
+    echo "Error: Checks set is not defined!"
+    echo
+    echo "Available checks sets:"
+    echo
 
-for s in `cd checks && ls`; do
+    for s in `cd checks && ls`; do
 
-echo $s
+        echo $s
 
-done
+    done
 
-exit
+    exit
 
 fi
 
 for s in `cd checks/$1 && ls` ; do
 
-./checker $1 $s
+    ./checker $1 $s
 
 done
 

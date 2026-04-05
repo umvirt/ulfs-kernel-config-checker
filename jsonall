@@ -1,18 +1,18 @@
 if [[ $1 == "" ]]
 then
 
-echo "Error: Checks set is not defined!"
-echo
-echo "Available checks sets:"
-echo
+    echo "Error: Checks set is not defined!"
+    echo
+    echo "Available checks sets:"
+    echo
 
-for s in `cd checks && ls`; do
+    for s in `cd checks && ls`; do
 
-echo $s
+        echo $s
 
-done
+    done
 
-exit
+    exit
 
 fi
 
@@ -20,9 +20,9 @@ echo "{\"set\":\"$1\",\"checks\":["
 
 for s in `cd checks/$1 && ls` ; do
 
-./json $1 $s 
-echo -e ","
+    ./json $1 $s 
+    echo -e ","
 
 done
 
-echo -e ]}
+echo -e "]}"

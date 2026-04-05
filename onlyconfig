@@ -1,19 +1,16 @@
 if [[ $1 == "" ]] | [[ $2 == "" ]]
 then
 
-echo "Usage: $0 <linux-souce-directory> <new-linux-source-directory>"
-
-exit
+        echo "Usage: $0 <linux-souce-directory> <new-linux-source-directory>"
+        exit
 
 fi
 
 if [ ! -d $1 ]
-
 then
 
-echo "ERROR: linux-souce-directory not exist"
-
-exit
+        echo "ERROR: linux-souce-directory not exist"
+        exit
 
 fi
 

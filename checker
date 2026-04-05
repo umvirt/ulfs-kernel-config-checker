@@ -8,8 +8,8 @@
 if [ ! -f config/config ]
 then
 
-echo "ERROR: Linux kernel config file not found."
-exit
+    echo "ERROR: Linux kernel config file not found."
+    exit
 
 fi
 
@@ -18,18 +18,18 @@ fi
 if [[ $1 == "" ]]
 then
 
-echo "Error: Checks set is not defined!"
-echo
-echo "Available checks sets:"
-echo
+    echo "Error: Checks set is not defined!"
+    echo
+    echo "Available checks sets:"
+    echo
 
-for s in `cd checks && ls`; do
+    for s in `cd checks && ls`; do
 
-echo $s
+        echo $s
 
-done
+    done
 
-exit
+    exit
 
 fi
 
@@ -38,17 +38,18 @@ fi
 if [[ $2 == "" ]]
 then
 
-echo "ERROR: Check not defined."
-echo
-echo "Available checks:"
-echo
+    echo "ERROR: Check not defined."
+    echo
+    echo "Available checks:"
+    echo
 
-for s in `cd checks/$1 && ls`; do
+    for s in `cd checks/$1 && ls`; do
 
-echo $s
+        echo $s
 
-done
-exit
+    done
+
+    exit
 
 fi
 
@@ -57,17 +58,16 @@ CF=0
 if [ -f checks/$1/$2 ]
 then
 
-. checks/$1/$2
-
-CF=1
+    . checks/$1/$2
+    CF=1
 
 fi
 
 if [[ $CF == 0 ]]
 then
 
-echo "ERROR: Check file not found."
-exit
+    echo "ERROR: Check file not found."
+    exit
 
 fi
 
@@ -78,20 +78,17 @@ echo
 for PARAM in ${!CHECKS[@]}
 do
 
-#echo $PARAM
+    declare VAL="CONFIG_$PARAM"
+    VALUE=${!VAL}
 
-#//PARAM=key
-declare VAL="CONFIG_$PARAM"
-VALUE=${!VAL}
+    if [[ $VALUE == "" ]]
+    then
 
-if [[ $VALUE == "" ]]
-then
+        VALUE="NULL"
 
-VALUE="NULL"
+    fi
 
-fi
-
-CMP=`./cmp "${VALUE}" "${CHECKS[$PARAM]}"`
-printf "%-10s%-40s%-20s%-40s\n" $CMP $VAL "$VALUE" "${CHECKS[$PARAM]}"
+    CMP=`./cmp "${VALUE}" "${CHECKS[$PARAM]}"`
+    printf "%-10s%-40s%-20s%-40s\n" $CMP $VAL "$VALUE" "${CHECKS[$PARAM]}"
 
 done
