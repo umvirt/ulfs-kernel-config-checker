@@ -193,3 +193,17 @@ To update ckecks a directory comparsion tool like Kompare can be used.
 Just select new release as destination and previous release as source.
 
 In BLFS git-repository kernel configuration is stored in kernel-config directory.
+
+### Export to JSON
+
+It's possible to export checks sets to files with JSON format. It's can be very useful in other applications.
+
+For example, [UmVirt on-line Linux kernel configuration checker](https://umvirt.com/linux/kernelconfigchecker/) uses this JSON files as source data.
+
+To export checks sets to JSON file run command:
+
+        ./set2json %checks_set% > %json_file%
+
+For example, to export checks set 'amd64' run:
+
+        ./set2json amd64 > amd64.json
