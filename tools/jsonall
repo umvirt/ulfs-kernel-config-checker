@@ -20,7 +20,7 @@ echo "{\"set\":\"$1\",\"checks\":["
 
 for s in `cd checks/$1 && ls` ; do
 
-    ./json $1 $s 
+    bash tools/json $1 $s 
     echo -e ","
 
 done

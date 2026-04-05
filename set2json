@@ -18,6 +18,6 @@ then
 
 fi
 
-./jsonall "$@" | tr -d '\n' | sed -e 's/,\}/\}/g' | sed -e 's/,\]/\]/g'
+bash tools/jsonall "$@" | tr -d '\n' | sed -e 's/,\}/\}/g' | sed -e 's/,\]/\]/g'
 echo
 
