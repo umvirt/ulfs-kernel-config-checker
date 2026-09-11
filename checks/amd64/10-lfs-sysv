@@ -17,6 +17,7 @@ declare -A CHECKS=(
 ["DEVTMPFS"]="y"
 ["DEVTMPFS_MOUNT"]="y"
 ["SYSFB_SIMPLEFB"]="y"
+["LEGACY_TIOCSTI"]="NULL"
 ["DRM"]="y"
 ["DRM_PANIC"]="y"
 ["DRM_PANIC_SCREEN"]="kmsg"

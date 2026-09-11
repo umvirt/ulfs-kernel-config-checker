@@ -1,10 +1,10 @@
 # UmVirt Linux kernel config file checker
 
-ULFS version: 0.3
+ULFS version: 0.3.1
 
-LFS version: 13.0
+LFS version: 13.1
 
-Linux kernel version: 6.18.10
+Linux kernel version: 7.1.8
 
 License: GPL
 
